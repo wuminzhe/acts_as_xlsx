@@ -47,6 +47,11 @@ To install, use the following command:
 Usage
 -----
 
+To include functions to active record, you need a rails initializer:
+
+    require 'active_record'
+    ActiveRecord::Base.send :include, Axlsx::Ar
+
 ###Examples
 
 See the Guides here: 
